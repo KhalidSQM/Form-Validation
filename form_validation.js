@@ -11,11 +11,11 @@ function formValidation() {
     if (!userName) {
         userNameMessage.innerText = "Please enter your name";
         error += 1;
-    }else if (userName.length < 3) {
-        userNameMessage.innerText = "Must be 3 characters or more";
-        error += 1;
-    }else if (!isNaN(userName)) {
+    } else if (!isNaN(userName)) {
         userNameMessage.innerText = "Must be letters only";
+        error += 1;
+    } else if (userName.length < 3) {
+        userNameMessage.innerText = "Must be 3 characters or more";
         error += 1;
     }else {
         userNameMessage.innerText = ""
@@ -24,11 +24,11 @@ function formValidation() {
     if (!userPass) {
         userPasswordMessage.innerText = "Please enter your password";
         error += 1;
-    }else if (userPass.length < 6) {
-        userPasswordMessage.innerText = "Must be 6 digits or more";
-        error += 1;
-    }else if (isNaN(userPass)) {
+    } else if (isNaN(userPass)) {
         userPasswordMessage.innerText = "Must be numbers only";
+        error += 1;
+    } else if (userPass.length < 6) {
+        userPasswordMessage.innerText = "Must be 6 digits or more";
         error += 1;
     }else {
         userPasswordMessage.innerText = ""
@@ -42,3 +42,5 @@ submit.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent form submission if validation fails
     }
 });
+
+
