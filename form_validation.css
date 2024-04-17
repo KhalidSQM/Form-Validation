@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #aaa;
+    background: #111;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +16,7 @@ body {
 
 h1 {
     margin: 100px 0 50px;
+    
 }
 
 form {
@@ -24,7 +25,7 @@ form {
     border: 1px solid #eee;
     padding: 18px;
     width: 300px;
-    box-shadow: 0 0 15px 1px rgb(255, 255, 255);
+    box-shadow: 0 0 12px 1px rgb(255, 255, 255);
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -56,7 +57,7 @@ button {
 }
 
 p {
-    color: #333;
+    color: #b88;
     font-weight: 300;
     font-size: 14px;
     margin-top: 5px;
